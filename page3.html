@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Dev_club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/page3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <a href="#"><h3 class="w3-padding-64"><b class="sidebar_title">Open_Space</b></h3></a>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">หน้าหลัก</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">รายละเอียดชมรม</a>
+    <a href="#activity" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">กิจกรรม</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ผลงาน</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">สมาชิก</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เข้าชมรม</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-jumbo"><b>Dev_club</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>รายละเอียดชมรม</b></h1>
+    <hr style="width:50px;border:5px solid #ff751a" class="w3-round">
+    <p>พื้นที่ของ Developer วัยมัธยมที่จะมารวมตัวกันเพื่อพัฒนาโปรเจคต่างๆ</p>
+    <p>ไม่จำกัดภาษา ไม่จำกัดพื้นฐาน ไม่จำกัดชั้นปี เรียนรู้ผ่านการปฎิบัติจริง สร้างผลงานที่นำไปใช้ได้จริง
+    </p>
+
+  </div>
+  <!-- activity -->
+  <div class="w3-container" id="activity" style="margin-top:75px">
+    <div class="schedule_tab_container">
+      <div class="schedule_tab_head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <style>
+          html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
+        </style>
+        <style>
+          html {
+            font-family: Inter;
+            font-size: 16px;
+          }
+
+          body {
+            font-weight: 400;
+            font-style:normal;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: normal;
+            line-height: 1.15;
+            color: var(--dl-color-gray-black);
+            background-color: var(--dl-color-gray-white);
+
+          }
+        </style>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        />
+        <link rel="stylesheet" href="./css/schedule_style.css" />
+      </div>
+      <body>
+        <div>
+          <link href="./css/schedule.css" rel="stylesheet" />
+
+          <meta property="og:title" content="New Project" />
+          <div class="home-container">
+            <div class="home-features">
+              <h1 class="w3-xxxlarge w3-text-red"><b>กิจกรรม</b></h1>
+              <hr style="width:50px;border:5px solid #ff751a" class="w3-round">
+              <div class="home-container1">
+                <div class="feature-card1-feature-card rootClassName">
+                  <h2 class="feature-card1-text"><span>Lorem ipsum</span></h2>
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHllbGxvdyUyMHRlY2h8ZW58MHx8fHwxNjI2MjU1NDk0&ixlib=rb-1.2.1&w=1000"
+                    class="feature-card1-image"
+                  />
+                </div>
+                <div class="feature-card1-feature-card rootClassName">
+                  <h2 class="feature-card1-text"><span>Lorem ipsum</span></h2>
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHllbGxvdyUyMHRlY2h8ZW58MHx8fHwxNjI2MjU1NDk0&ixlib=rb-1.2.1&w=1000"
+                    class="feature-card1-image"
+                  />
+                </div>
+                <div class="feature-card1-feature-card rootClassName">
+                  <h2 class="feature-card1-text"><span>Lorem ipsum</span></h2>
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHllbGxvdyUyMHRlY2h8ZW58MHx8fHwxNjI2MjU1NDk0&ixlib=rb-1.2.1&w=1000"
+                    class="feature-card1-image"
+                  />
+                </div>
+                <div class="feature-card1-feature-card rootClassName">
+                  <h2 class="feature-card1-text"><span>Lorem ipsum</span></h2>
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHllbGxvdyUyMHRlY2h8ZW58MHx8fHwxNjI2MjU1NDk0&ixlib=rb-1.2.1&w=1000"
+                    class="feature-card1-image"
+                  />
+                </div>
+                <div class="feature-card1-feature-card rootClassName">
+                  <h2 class="feature-card1-text"><span>Lorem ipsum</span></h2>
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHllbGxvdyUyMHRlY2h8ZW58MHx8fHwxNjI2MjU1NDk0&ixlib=rb-1.2.1&w=1000"
+                    class="feature-card1-image"
+                  />
+                </div>
+                <div class="feature-card1-feature-card rootClassName">
+                  <h2 class="feature-card1-text"><span>Lorem ipsum</span></h2>
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHllbGxvdyUyMHRlY2h8ZW58MHx8fHwxNjI2MjU1NDk0&ixlib=rb-1.2.1&w=1000"
+                    class="feature-card1-image"
+                  />
+                </div>
+                <div class="feature-card1-feature-card rootClassName">
+                  <h2 class="feature-card1-text"><span>Lorem ipsum</span></h2>
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHllbGxvdyUyMHRlY2h8ZW58MHx8fHwxNjI2MjU1NDk0&ixlib=rb-1.2.1&w=1000"
+                    class="feature-card1-image"
+                  />
+                </div>
+                <div class="feature-card1-feature-card rootClassName">
+                  <h2 class="feature-card1-text"><span>Lorem ipsum</span></h2>
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHllbGxvdyUyMHRlY2h8ZW58MHx8fHwxNjI2MjU1NDk0&ixlib=rb-1.2.1&w=1000"
+                    class="feature-card1-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </div>
+  </div>
+
+  <!-- showcase -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xxxlarge w3-text-red"><b>ผลงาน</b></h1>
+    <hr style="width:50px;border:5px solid #ff751a" class="w3-round">
+  </div>
+  <h3 align="center">ไม่มีผลงาน</h3>
+
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>สมาชิก</b></h1>
+    <hr style="width:50px;border:5px solid #ff751a" class="w3-round">
+    <p>The best team in the world.</p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale(0%)">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src=".\image\guide.jfif"  alt="Hirankul" style="width:40%">
+        <div class="w3-container">
+          <h3>Hirankul</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src=".\image\pooh.JPG" alt="Nattachai" style="width:40%">
+        <div class="w3-container">
+          <h3>Nattachai</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src=".\image\petch.jpg" alt="Anapatch" style="width:40%">
+        <div class="w3-container">
+          <h3>Anapatch</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>สมัครเข้าชมรม</b></h1>
+    <hr style="width:50px;border:5px solid #ff751a" class="w3-round">
+    <p class="label_button">กดปุ่มเพื่อสมัครเข้าชมรม</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+
+
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
