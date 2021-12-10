@@ -1,0 +1,51 @@
+[data-tab-content] {
+  display: none;
+}
+
+.home_tab_active[data-tab-content] {
+  display: block;
+}
+
+body {
+  padding: 0rem;
+  margin: 0rem;
+
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: -1rem;
+  padding-top: -10rem;
+  margin-bottom: 1rem;
+
+}
+
+.tab {
+  cursor: pointer;
+  margin-left: -100rem;
+  margin-right: -100rem;
+  padding: -15rem;
+  background-color: white;
+  font-size: 120%;
+}
+
+.tab:hover {
+  color: orange;
+}
+
+.tab.home_tab_active {
+  background-color: orange;
+  color: white;
+
+}
+.tab.home_tab_active:hover{
+  color: white;
+}
+
+
+.tab-content {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
