@@ -1,6 +1,6 @@
 
 <html lang="en">
-<title>Dev_club</title>
+<title><%= club_name %></title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="/">
@@ -34,7 +34,7 @@ body {font-size:16px;}
 
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Clubs Name</span>
+  <span><%= club_name %></span>
 </header>
 
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -44,12 +44,10 @@ body {font-size:16px;}
 
 
   <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-jumbo"><b>Dev_club</b></h1>
+    <h1 class="w3-jumbo"><b><%= club_name %></b></h1>
     <h1 class="w3-xxxlarge w3-text-red"><b>รายละเอียดชมรม</b></h1>
     <hr style="width:50px;border:5px solid #ff751a" class="w3-round">
-    <p>พื้นที่ของ Developer วัยมัธยมที่จะมารวมตัวกันเพื่อพัฒนาโปรเจคต่างๆ</p>
-    <p>ไม่จำกัดภาษา ไม่จำกัดพื้นฐาน ไม่จำกัดชั้นปี เรียนรู้ผ่านการปฎิบัติจริง สร้างผลงานที่นำไปใช้ได้จริง
-    </p>
+    <p><%- club_des %></p>
 
   </div>
 
